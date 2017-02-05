@@ -58,11 +58,15 @@ these would probably be seperate Git repos for 3rd party plugins.
 
 1. Make sure you have Go installed and setup
 2. Clone the project 
-3. Run `make` in order to build and place the plugins in the expected location
+3. Get dependencies
+```bash
+go get github.com/hashicorp/go-plugin
+```
+4. Run `make` in order to build and place the plugins in the expected location
 ```bash
 make clean && make
 ```
-4. Run the main program
+5. Run the main program
 ```bash
 go run main.go
 ```
